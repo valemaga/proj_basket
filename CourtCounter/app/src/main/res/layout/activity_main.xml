@@ -8,38 +8,41 @@
 
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Team A"
         android:gravity="center"/>
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/team_a_score"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="0"
         android:gravity="center" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/plus_three"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="+3 Points"
-        android:layout_margin="6dp"/>
+        android:layout_margin="6dp"
+        android:onClick="addToTeamA"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/plus_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="+2 Points"
-        android:layout_margin="6dp"/>
+        android:layout_margin="6dp"
+        android:tag="2"
+        android:onClick="addToTeamA"/>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/plus_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Free Throw"
-        android:layout_margin="6dp"/>
+        android:layout_margin="6dp"
+        android:onClick="addToTeamA"/>
 
 
 </LinearLayout>
