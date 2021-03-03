@@ -4,45 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Team A"
-        android:gravity="center"/>
-    <TextView
-        android:id="@+id/team_a_score"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="0"
-        android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Team A" />
 
-    <Button
-        android:id="@+id/plus_three"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="+3 Points"
-        android:layout_margin="6dp"
-        android:onClick="addToTeamA"/>
+        <TextView
+            android:id="@+id/team_a_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0" />
 
-    <Button
-        android:id="@+id/plus_two"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="+2 Points"
-        android:layout_margin="6dp"
-        android:tag="2"
-        android:onClick="addToTeamA"/>
+        <Button
+            android:id="@+id/plus_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:onClick="addToTeamA"
+            android:text="+3 Points" />
 
-    <Button
-        android:id="@+id/plus_one"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Free Throw"
-        android:layout_margin="6dp"
-        android:onClick="addToTeamA"/>
+        <Button
+            android:id="@+id/plus_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:onClick="addToTeamA"
+            android:tag="2"
+            android:text="+2 Points" />
+
+        <Button
+            android:id="@+id/plus_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:onClick="addToTeamA"
+            android:text="Free Throw" />
 
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Team B" />
+
+        <TextView
+            android:id="@+id/team_b_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/plus_three_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:onClick="addToTeamB"
+            android:text="+3 Points" />
+
+        <Button
+            android:id="@+id/plus_two_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:onClick="addToTeamB"
+            android:tag="2"
+            android:text="+2 Points" />
+
+        <Button
+            android:id="@+id/plus_one_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:onClick="addToTeamB"
+            android:text="Free Throw" />
+
+    </LinearLayout>
 </LinearLayout>
